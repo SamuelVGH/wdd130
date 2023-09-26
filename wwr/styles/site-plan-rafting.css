@@ -1,0 +1,97 @@
+:root{
+    --primary-color: #a1cbe6;
+    --secondary-color: #FEFAE0;
+    --accent1-color: #000; /* i used this to the color of the font */
+    --accent2-color:#eba275;
+
+    --heading-font: Roboto;
+    --paragraph-font:Roboto;
+
+    --nav-background-color: azure;
+    --nav-link-color: #000;
+    --nav-hover-link-color: azure ;
+    --nav-hover-background-color:var(--accent2-color)
+    }
+    
+    header {
+        padding: 20px;
+        background-color: var(--accent2-color);
+    }
+    p{
+        padding: 20px;
+        text-align: center;
+    }
+    body {
+        background-color: var(--secondary-color);
+        font-family: 'Roboto', sans-serif;
+        max-width: 960px;
+        padding: 10px;
+        align-items: center;
+        }
+    h1, h2, h3, h4, h6 {
+        font-family:var(--heading-font) ;
+        color: var(--accent1-color);
+        padding: 20px; 
+        text-align: center;
+    }
+
+
+    .contenedor {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+    table{
+        margin: 0 auto;
+        background-color: var(--nav-background-color);
+    }
+    .primary{
+        background-color: var(--primary-color);
+    }
+    .secondary{
+        background-color: var(--secondary-color);
+    }
+    .accent1{
+        background-color: var(--accent1-color);
+    }
+    .accent2{
+        background-color: var(--accent2-color);
+    }
+    nav{
+        background-color: var(--nav-background-color);
+        font-size: 1.3rem;
+        display:flex;
+    
+    }
+    nav a {
+        display: block;
+        color: var(--nav-link-color);
+        text-decoration: none;
+        padding: 2rem;
+    }
+    nav a:link, nav a:visited{
+        color: var(--accent1-color);
+    }
+    nav a:hover {
+        color: var(--accent1-color);
+        background-color: var(--primary-color);
+    }
+
+    main img {
+        width: 350px;
+        height: auto;
+        padding: 20px;
+        border-radius: 35% ;
+        border: 2px solid var(--accent1-color);
+        
+    }
+    .image-1, .image-2, .image-3{
+        text-align: center;
+    }
+
+
+    main {
+        background-color: var(--primary-color);
+    }
+    footer {
+        background-color: var(--accent2-color);
+    }
