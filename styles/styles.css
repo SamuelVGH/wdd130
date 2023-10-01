@@ -20,7 +20,7 @@ body{
 }
 
 main {
-    width:auto;
+    width: auto;
     border: 0;
     margin: 0;
     padding: 20px;
@@ -64,7 +64,7 @@ aside {
 aside h2{
     position: relative;
     text-align: center;
-    top: 40px;
+    top: 0;
     color: white;
 }
 aside img {
