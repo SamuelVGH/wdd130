@@ -3,80 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }/* Class selectors*/
-
-.box{
-    margin: 1rem;
-    border: 1px;
-    padding: 1rem;
-    background-color: azure;
-    
-}
-aside{
-    width: 20rem;
-    text-align: center;
-}
 body{
     background-color: azure;
 }
-
-main {
-    width: auto;
-    border: 0;
-    margin: 0;
-    padding: 20px;
-    background-color: azure;
-    
+header,.grid-container, footer{
+    max-width: 840px;
+    margin: 0 auto;
 }
-
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
 nav {
-    display:block;
+    display:flex;
     background-color: steelblue;
-    padding: 3px;
+    padding: 0 30px;
     border: 0;
-    }
+    justify-content: space-evenly;
+}
 nav a {
     color: white;
     display: block;
-    padding: 5px;
-    text-align: right;
+    text-decoration: none;
+    padding: 28px;
+    font-size: 1.5rem;
 }
-h1 {
-color: #000;
-text-align: center;
+main {
+    grid-column: 2/3;
+    width: auto;
+    border: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: azure;
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #000;
+    border: 1px solid steelblue;
+    margin: 1rem;
     padding: 2px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px rgb(193, 218, 240);
     float: right;
 
 }
-aside {
-    width: auto;
-    margin: 1rem;
-    border: 3px solid black;
-    padding: 1rem;
-    text-align: center;
+h1 {
+color: #000;
+text-align: center;
+border-bottom: 3px solid steelblue;
+}
+aside{
+    grid-column: 1/2;
     position: relative;
+    width: 20rem;
+    text-align: center;
+    grid-row: 1/2;
+    border: 3px solid #000;
+}
+p {
+    padding: 1rem;
+    text-align: left;
+}
+.box{
+    background-color: rgb(193, 218, 240);
+    display: inline-block;
+    margin: 1rem;
+    border: 1px;
+    padding: 0 2rem;
+}
+.box li a{
+    text-decoration: none;
 }
 aside h2{
     position: relative;
     text-align: center;
-    top: 0;
+    top: 30px;
     color: white;
+    -webkit-text-stroke: .5 white;
 }
 aside img {
-    width: 400px;
+    width: 200px;
     height: auto;
 }
-p {
-    padding: 1rem;
-    text-align: center;
-}
+
 footer{
     margin-top: 1rem;
     border-top: 1px solid #000;
+    text-align: center;
+}
+footer p{
     text-align: center;
 }
