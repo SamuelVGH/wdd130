@@ -159,7 +159,7 @@ footer p{
 }
 footer nav{
     position: absolute;
-    padding-left: 80%;
+    padding-left: 80%; /* this works but i think could be a better way to do it currently idk what is that way but soon*/
     align-items: center;
 }
 footer nav a{
