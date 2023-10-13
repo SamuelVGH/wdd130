@@ -42,7 +42,7 @@ form{
     align-items: center;
 }
 .column1{
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     margin: 10px;
 }
 .column2{
@@ -69,6 +69,9 @@ label{
     padding-right: 1rem;
 }
 .column2 label{
+    text-align: right;
+}
+.column1 label{
     text-align: right;
 }
 input{
