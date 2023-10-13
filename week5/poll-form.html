@@ -5,41 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
     <header>
-        <h1>Poll form wdd 130</h1>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
     </header>
 
     <main>
         <form>
             <fieldset>
                 <legend> Contact information</legend>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname">
-                <label for="useremail">Email</label>
-                <input type="text" id="useremail" name="useremail">
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser?</label>
-                <select name="browser" id="browser">
-                    <option value="Google">Chrome</option>
-                    <option value="Mozilla">Firefox</option>
-                    <option value="Opera">Opera</option>
-                    <option value="Other">Other</option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="text" id="pet" name="pet">
-                <label for="places">List the places you have lived:</label>
-                <Textarea name="places" id="places"  rows="3" placeholder="Mexico, Brazil, Etc..."></Textarea>
-                <button type="submit">Submit</button>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="Google">Chrome</option>
+                        <option value="Mozilla">Firefox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="text" id="pet" name="pet">
+                    <label for="places">List the places you have lived:</label>
+                    <Textarea name="places" id="places"  rows="3" placeholder="Mexico, Brazil, Etc..."></Textarea>
+                    <button type="submit">Submit</button>
+                </div>
             </fieldset>
         </form>
     </main>
-
     <footer>
-        <p>2023 footer</p>
+        <p>©2023 | Samuel Garcia CDMX | Mexico</p>
     </footer>
 </body>
 </html>
