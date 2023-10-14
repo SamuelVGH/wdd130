@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    background-color: aliceblue;
+    align-items: center;
+}
+header{
+    background-color:rgba(172, 240, 234, 0.404);
+    text-align: center;
+    padding: 1rem;
+    font-size: .6rem;
+    border:1.5px solid #000 ;
+}
+main{
+    background-color:rgba(102, 51, 153, 0.247);
+    display: grid;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgba(172, 240, 234, 0.404);
+    padding: 1rem;
+    text-align: center;
+    border: 1.5px solid #000;
+}
+form{
+    margin: 1rem;
+    display: grid;
+}
+.form-item{
+    display: grid;
+    align-items: center;
+    padding: .5rem;
+}
+fieldset{
+    background-color: azure;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+}
+select{
+    color: grey;
+    padding: .5rem;
+}
+label{
+    text-align: left;
+}
+button{
+    background-color: black;
+    color: white;
+    border: 0;
+    align-items: center;
+    width: 96%;
+    border-radius: .5rem;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(87, 87, 87);
+    width: 96%;
+}
