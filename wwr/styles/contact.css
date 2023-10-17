@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    
+    --primary-color: #a1cbe6;
+    --secondary-color: #FEFAE0;
+    --accent1-color: #000; /* i used this to the color of the font */
+    --accent2-color:#eba275;
+
+    --heading-font: Roboto;
+    --paragraph-font:Roboto;
+
+    --nav-background-color: azure;
+    --nav-link-color: #000;
+    --nav-hover-link-color: azure ;
+    --nav-hover-background-color:var(--accent2-color)
+    }
+body{
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font) ;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+}
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid steelblue;
+    width: 100%;
+    padding: 0 2rem;
+}
+header img{
+    width: 6rem;
+    float: left;        
+}
+header nav{
+    text-align: center;
+}
+.navigation{
+        color: var(--accent1-color);
+        display: flex;
+        list-style: none;
+}
+.navigation li{
+    flex: 1 1 100%;
+}
+.navigation a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;   
+}
+.navigation a:hover{
+    color: steelblue;
+    font-weight: 700;
+    text-decoration:overline;
+}
+nav h1{
+    font-size: 1px;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    padding: 0 0 2rem;
+}
+#miIframe {
+    width: 80%;
+    height: 70%;
+}
+.box{
+    background-color: azure;
+    border-radius: 40px;
+}
+p{
+    font-size: 1.4rem;
+}
+.b3{
+    grid-row: 1/3;
+}
+.b1{
+    font-size: 70%;
+}
+.b2{
+    padding: 1rem;
+    font-size: 70%;
+}
+main{
+    width: 700px;
+    padding: 2rem;
+    text-align: center;
+}
+.grid-layout2{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+    border-radius: 30px;
+}
+.container{
+    display: grid;
+    width: 100%;
+    grid-row-gap: 20px;
+}
+.container img{
+    width: 100%;
+}
+input, select, textarea{
+    height: 30px;
+    background-color:var(--secondary-color);
+    border-radius: 10px;
+}
+::placeholder{
+    font-size: 1rem;
+}
+select{
+    font-size: 1rem;
+    color: grey;
+}
+.c5{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+button{
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    padding:2rem;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    align-items: center;
+    border-top: 2px solid steelblue;
+    width: 100%;
+}
+.p{
+    text-align: center;
+}
+.a{
+    width: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+footer img{
+    width: 100%;
+    align-items: center;
+}
+
+footer nav a{
+    justify-items: end;
+    text-decoration: none;
+}
