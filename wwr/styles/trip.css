@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    
+    --primary-color: #a1cbe6;
+    --secondary-color: #FEFAE0;
+    --accent1-color: #000; /* i used this to the color of the font */
+    --accent2-color:#eba275;
+
+    --heading-font: Roboto;
+    --paragraph-font:Roboto;
+
+    --nav-background-color: azure;
+    --nav-link-color: #000;
+    --nav-hover-link-color: azure ;
+    --nav-hover-background-color:var(--accent2-color)
+    }
+body{
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+}
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid steelblue;
+    width: 100%;
+    padding: 0 2rem;
+}
+header img{
+    width: 6rem;
+    float: left;        
+}
+header nav{
+    text-align: center;
+}
+.navigation{
+        color: var(--accent1-color);
+        display: flex;
+        list-style: none;
+}
+.navigation li{
+    flex: 1 1 100%;
+}
+.navigation a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;   
+}
+.navigation a:hover{
+    color: steelblue;
+    font-weight: 700;
+    text-decoration:overline;
+}
+nav h1{
+    font-size: 1px;
+}
+
+main{
+    width: 700px;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+main img{
+    width: 500px;
+    border-radius: 40px;
+}
+.boxexpand input[type="checkbox"] {
+    display: grid;
+}
+
+.boxexpand label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid #333;
+    border-radius: 15px; ;
+}
+
+.boxexpand .content {
+    background-color: rgb(169, 190, 207);
+    display: none;
+    padding: 10px;
+    border: 1px dotted #333;
+    border-radius: 10px;
+}
+
+.boxexpand input[type="checkbox"]:checked + label + .content {
+    display: block;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    padding:2rem;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    align-items: center;
+    border-top: 2px solid steelblue;
+    width: 100%;
+}
+.p{
+    text-align: center;
+}
+.a{
+    width: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+footer img{
+    width: 100%;
+    align-items: center;
+}
+footer nav a{
+    justify-items: end;
+    text-decoration: none;
+}
